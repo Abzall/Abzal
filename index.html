@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky">
+        <a href="#" class="logo">Портфолио</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Главная</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Обо мне</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Контакты</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Здравствуйте, Меня Зовут<br><span>Абзал.</span></h2>
+            <h3>Я Занимаюсь Web Разработкой.</h3>
+            <a href="#about" class="btn">Обо мне</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Подробнее обо мне</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Я Вэб Разработчик со стажем 3 года.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa sequi saepe suscipit dolore. Aut, iusto. Reprehenderit consequatur quia enim molestias itaque excepturi, sed rerum laudantium soluta aperiam? Blanditiis, tempora?<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate et officia aliquam voluptatibus, explicabo rerum deleniti quis magni in omnis minima neque quisquam dignissimos necessitatibus quae quibusdam sapiente fugit inventore!</p>
+            </div>
+            <div class="w50">
+                <img src="/img/img1.jpg" class="img">
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Наши Контакты</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Наши Контакты</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Адрес</h3>
+                            <p>ул. Егизбаева 7/1 оф 1<br>Город Алматы<br>55060</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Телефон номер</h3>
+                        <p>+7(707)175-27-47</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelop-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                        <p>aipetreu13@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Свяжитесь со мной</h3>
+                    <input type="text" placeholder="Имя">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Ваше Сообщение"></textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright c 2022 Online Tutotials. All Righ Reserved.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
